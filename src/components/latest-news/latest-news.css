@@ -1,0 +1,10 @@
+.latest-news-section .container .all-cols-latestnews .col-news{
+    border: 1px solid #E4E7E9;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+@media (max-width: 1350px){
+    .latest-news-section .container .all-cols-latestnews{
+        flex-wrap: wrap;
+    }
+}

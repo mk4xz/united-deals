@@ -1,0 +1,12 @@
+.top-electronics-brands .container .all-brands-img .col-brand{
+    width: calc(100% / 3);
+}
+@media (max-width: 768px){
+    .top-electronics-brands .container .all-brands-img{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .top-electronics-brands .container .all-brands-img .col-brand{
+        width: 100%;
+    }
+}

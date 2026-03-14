@@ -1,0 +1,76 @@
+.categories-section .container .all-categories .col-category.active{
+    background-color: black;
+    color: white;
+}
+.product-information-section .container .col-cart{
+    transition: background-color 0.5s ease;
+}
+.product-information-section .container .col-cart:hover{
+    background-color: #1877F2;
+    border: none;
+}
+.product-information-section .container .col-cart:hover svg,
+.product-information-section .container .col-cart:hover p{
+    color: white;
+}
+.product-information-section .container .col-cart svg,
+.product-information-section .container .col-cart p{
+    transition: color 0.5s ease;
+}
+
+@media (max-width: 992px){
+    .all-information-product{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .all-information-product .container .all-content-information{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .all-information-product .container .all-content-information div{
+        width: 100%;
+    }
+    .all-information-product .container .all-content-information .col-information-shipping{
+        padding-left: 0px;
+        border: none;
+    }
+}
+
+@media (max-width: 800px){
+    .section-information-product{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .product-information-section{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    .product-information-section .container .section-information-product{
+        flex-direction: column;
+        width: 100%;
+    }
+    .product-information-section .container .section-information-product .content-product-information{
+        width: 100%;
+    }
+    .product-information-section .container .section-information-product .content-product-images{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-information-section .container .section-information-product .content-product-information .titl-product{
+        font-size: 15px;
+    }
+    .product-information-section .container .section-information-product .content-product-information .col-get{
+        width: 180px;
+    }
+}
+
+@media (max-width: 520px){
+    .product-information-section .container .col-rates .feedback-p{
+        display: none;
+    }
+    .product-information-section .container .col-share{
+        display: none;
+    }
+}

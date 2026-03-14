@@ -1,0 +1,29 @@
+.all-products-section .container .col-product{
+    border: 1px solid #E4E7E9;
+    border-radius: 3px;
+}
+@media (max-width: 1400px){
+    .all-products-section{
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 768px){
+    .all-products-section{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1250px){
+    .all-products-section .container .TOP-RATED-products{
+        display: none;
+    }
+}
+@media (max-width: 992px){
+    .all-products-section .container .NEW-ARRIVAL-products{
+        display: none;
+    }
+}
+@media (max-width: 600px){
+    .all-products-section .container{
+        flex-direction: column;
+    }
+}

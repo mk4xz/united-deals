@@ -1,0 +1,65 @@
+.shop-brands {
+  width: 100%;
+  margin: 36px 0;
+}
+
+.shop-brands__title {
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  color: #232321;
+  margin-bottom: 24px;
+}
+
+.shop-brands__grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.shop-brands__card {
+  min-height: 138px;
+  border-radius: 16px;
+  background: #eceff2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.shop-brands__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(24, 42, 62, 0.08);
+}
+
+.shop-brands__card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+  .shop-brands__title {
+    font-size: 34px;
+  }
+
+  .shop-brands__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .shop-brands__title {
+    font-size: 28px;
+  }
+
+  .shop-brands__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .shop-brands__card {
+    min-height: 108px;
+  }
+}

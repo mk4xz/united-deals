@@ -1,0 +1,11 @@
+@media (max-width: 1400px){
+    .macbook-pro{
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 768px){
+    .macbook-pro{
+        height: 200px;
+        margin-bottom: 20px;
+    }
+}

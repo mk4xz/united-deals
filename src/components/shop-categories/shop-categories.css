@@ -1,0 +1,23 @@
+.shop-with-categories .container .all-categories .col-category{
+    border: 1px solid #E4E7E9;
+}
+@media (max-width: 1400px){
+    .shop-with-categories{
+        margin-top: 40px;
+        margin-bottom: 140px;
+    }
+}
+@media (max-width: 768px){
+    .shop-with-categories{
+        margin-top: 20px;
+        margin-bottom: 120px;
+    }
+    .shop-with-categories .left-btn,
+    .shop-with-categories .right-btn{
+        width: 40px;
+        height: 40px;
+    }
+    .shop-with-categories .container .heading-categories h1{
+        font-size: 25px;
+    }
+}

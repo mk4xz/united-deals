@@ -1,0 +1,9 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(15, 17, 23, 0.08);
+}

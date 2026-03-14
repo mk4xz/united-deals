@@ -1,0 +1,257 @@
+.todays-deals {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.todays-deals__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.todays-deals__header h2 {
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 700;
+  color: #232321;
+}
+
+.todays-deals__meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.todays-deals__meta p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #232321;
+}
+
+.todays-deals__timer {
+  height: 44px;
+  border-radius: 10px;
+  background: #fcbd01;
+  color: #191c1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.todays-deals__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.todays-deals__card {
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.todays-deals__loading {
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todays-deals__image-wrap {
+  background: #eceef0;
+  border-radius: 24px;
+  min-height: 288px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 18px;
+  overflow: hidden;
+}
+
+.todays-deals__image-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.todays-deals__badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px 0 8px 0;
+  background: #f3b500;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+}
+
+.todays-deals__image-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(35, 35, 33, 0.44);
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.todays-deals__overlay-actions {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.todays-deals__overlay-actions button {
+  border: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #232321;
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.todays-deals__overlay-actions button:hover {
+  background: #fcbd01;
+  color: #191c1f;
+  transform: scale(1.05);
+}
+
+.todays-deals__image-wrap:hover::after,
+.todays-deals__image-wrap:focus-visible::after {
+  opacity: 1;
+}
+
+.todays-deals__image-wrap:hover .todays-deals__overlay-actions,
+.todays-deals__image-wrap:focus-visible .todays-deals__overlay-actions {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.todays-deals__flash {
+  margin-top: 10px;
+  color: #2f6cf4;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.todays-deals__flash.is-hot {
+  color: #ff4d4f;
+}
+
+.todays-deals__line {
+  margin-top: 3px;
+  height: 6px;
+  border-radius: 999px;
+  background: #b5d0ff;
+}
+
+.todays-deals__line.is-hot {
+  background: #ffd2d2;
+}
+
+.todays-deals__card h3 {
+  margin-top: 6px;
+  color: #232321;
+  font-size: 34px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  text-transform: uppercase;
+  min-height: 78px;
+}
+
+.todays-deals__price {
+  margin-top: 6px;
+  color: #1b6392;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.todays-deals__buy-btn {
+  margin-top: 10px;
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background: #232321;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.todays-deals__buy-btn:hover {
+  background: #191b1f;
+}
+
+@media (max-width: 1600px) {
+  .todays-deals__header h2 {
+    font-size: 32px;
+  }
+
+  .todays-deals__timer {
+    font-size: 22px;
+  }
+
+  .todays-deals__meta p {
+    font-size: 18px;
+  }
+
+  .todays-deals__card h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .todays-deals__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .todays-deals__card h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 760px) {
+  .todays-deals__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .todays-deals__meta {
+    flex-wrap: wrap;
+  }
+
+  .todays-deals__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .todays-deals__card h3 {
+    font-size: 22px;
+    min-height: auto;
+  }
+
+  .todays-deals__price {
+    font-size: 18px;
+  }
+}
